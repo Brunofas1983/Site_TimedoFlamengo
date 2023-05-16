@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@900&family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lato:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script> 
 </head>
 <body>
         <header>
             <div class="container">
                 <img src="https://www.flaresenha.com/wp-content/uploads/2021/03/embaixadas.png" alt="Logo do Flamengo">
-                <nav>
+                <nav class="sub-menu">
                     <ul>
                         <li>
                             <a href="#sobre" title="Ir para a Seção do Time">Sobre o Time</a>
@@ -23,7 +24,8 @@
                             <a href="#contato" title="Ir para a Seção Contato">Contato</a>
                         </li>
                     </ul>   
-                </nav>   
+                </nav> 
+                <button class="menu-mobile" type="submit">MENU</button>
             </div>
         </header>
         <section id="sobre">
@@ -61,9 +63,9 @@
                     <div>
                         <h3>Fale Conosco</h3>
                         <form>
-                            <input type="text" placeholder="Seu Nome">
-                            <input type="email" placeholder="Seu Email">
-                            <input type="tel" placeholder="Telefone">
+                            <input type="text" placeholder="Seu Nome" required>
+                            <input type="email" placeholder="Seu Email" required>
+                            <input type="tel" placeholder="Telefone" required>
                             <textarea placeholder="Como Podemos Ajudar?"></textarea>
                             <button type="submit">Enviar</button>
 
@@ -102,6 +104,7 @@
         </section> 
         <footer>
             &copy;Flamengo CRF - Todos os Direitos Reservados - 2023
-        </footer>    
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>    
 </body>
 </html>

@@ -18,8 +18,10 @@ header img {
 
 header {
     background-color: #c90909;
-  
-    
+}
+
+.menu-mobile {
+    display: none;
 }
 
 header .container {
@@ -39,6 +41,10 @@ header nav ul a{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+}
+
+.sub-menu {
+    display: inline;
 }
 
 header nav ul a:hover {
@@ -165,9 +171,210 @@ form textarea {
 
 }
 
+html {
+    overflow-x: hidden;
+}
+
 footer {
     background-color: black;
     color: #e60e0e;
     padding: 10px 0;
     text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    header img {
+        height: 80px;
+        border-radius: 10px;
+        
+    }
+    
+    .menu-mobile {
+        padding: 3px;
+        border-radius: 4px;
+        background-color: #000;
+        color: #c90909;
+        border: 1px solid red;
+        margin-right: 10px;
+        display: flex;
+    }
+
+    header {
+        background-color: #c90909;
+        
+    }
+    
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin-right: 16px;
+    }
+    
+    .sub-menu {
+        color: red;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 100px;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+    }
+
+
+    header nav ul a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+    
+    section img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 500px;
+        
+    }
+    
+    section .container {
+        display: block;
+    }
+    
+    section {
+        margin: 30px auto;
+        font-weight: normal;
+        text-align: center;
+    
+    }
+    
+    section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    
+    section h2{
+        font-family: 'Bungee', cursive;
+        font-size: 30px;
+        color: #c90909;
+        font-weight: normal;
+    }
+    
+    section ul li img {
+        width: 80px;
+        
+    }
+    
+    section ul li {
+        display: inline;
+        
+    }
+    
+    #sobre p {
+        margin-bottom: 10px;
+    }
+    
+    .midias img {
+        margin-right: 8px;
+    }
+    
+    #contato .container {
+        display: block;
+    }
+    
+    form input, button {
+        display: block;
+    }
+    
+    input:focus, textarea:focus {
+        outline-color: #c90909;
+    }
+    
+    .secao-contato {
+        display: block;
+        justify-content: center;
+    }
+    
+    .redes img {
+        width: 32px;
+        margin-right: 8px;
+    }
+    
+    .redes a {
+        text-decoration: none;
+    }
+    
+    #youtube img {
+        width: 70px;
+    }
+    
+    form {
+        margin: 0 10px;
+    }
+    
+    form input, textarea {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: #c90909;
+        background-color: #f1f1f1;
+    
+    }
+    
+    form button {
+        font-family: 'Bungee', cursive;
+        width: 100%;
+        background-color: black;
+        color: #e20d0d;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #c90909;
+        color: #fff;
+    }
+    
+    form textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    #contato h3 {
+        margin-bottom: 10px;
+        font-family: 'Bungee', cursive;
+        color: #c90909;
+        font-weight: normal;
+    
+    }
+    
+    footer {
+        background-color: black;
+        color: #e60e0e;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+    }
 }
