@@ -285,6 +285,7 @@ footer {
         font-size: 30px;
         color: #c90909;
         font-weight: normal;
+        margin: 10px 0;
     }
     
     section ul li img {
@@ -359,6 +360,7 @@ footer {
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        padding: 10px;
     }
     
     form button:hover {
